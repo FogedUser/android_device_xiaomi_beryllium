@@ -154,6 +154,9 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
     libqti-perfd-client
 
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # Context Hub
 PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0-impl.generic \
