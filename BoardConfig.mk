@@ -108,6 +108,14 @@ TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 
+# SELinux
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
+include device/qcom/sepolicy_vndr/SEPolicy.mk
+
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+PRODUCT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
+
 # LMKD
 TARGET_LMKD_STATS_LOG := true
 
