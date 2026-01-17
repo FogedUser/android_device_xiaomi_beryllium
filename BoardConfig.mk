@@ -151,6 +151,9 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/fs/config.fs
+
 #Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
