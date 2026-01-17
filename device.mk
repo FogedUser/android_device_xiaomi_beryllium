@@ -159,6 +159,11 @@ PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     system/core/libprocessgroup/profiles/task_profiles_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
+# Input
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/idc/uinput-fpc.idc:system/usr/idc/uinput-fpc.idc \
+    $(DEVICE_PATH)/configs/idc/uinput-goodix.idc:system/usr/idc/uinput-goodix.idc
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl:32 \
