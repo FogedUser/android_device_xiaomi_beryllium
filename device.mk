@@ -121,6 +121,11 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libsqlite.vendor:64
 
+
+# Native libraries whitelist
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/libraries/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
 # Neural Network
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
