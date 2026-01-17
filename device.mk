@@ -98,6 +98,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
 
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist.xml
+
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1 \
