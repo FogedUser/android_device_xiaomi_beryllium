@@ -114,6 +114,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
 
+# Recovery
+PRODUCT_PACKAGES += \
+    librecovery_updater_xiaomi
+
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1 \
