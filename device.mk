@@ -94,7 +94,8 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlays/overlay
+    $(DEVICE_PATH)/overlays/overlay \
+    $(DEVICE_PATH)/overlays/overlay-lineage
 
 # Minijail
 PRODUCT_PACKAGES += \
