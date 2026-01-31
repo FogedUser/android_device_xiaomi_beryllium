@@ -92,6 +92,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlays/overlay
+
 # Minijail
 PRODUCT_PACKAGES += \
     libavservices_minijail \
