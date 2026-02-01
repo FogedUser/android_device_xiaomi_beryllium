@@ -92,6 +92,25 @@ PRODUCT_PACKAGES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    fstab.qcom.ramdisk \
+    init.target.rc \
+    init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
+    init.mi.btmac.sh \
+    init.qcom.rc \
+    init.qcom.recovery.rc \
+    init.qcom.power.rc \
+    init.qcom.sensors.sh \
+    init.qcom.sh \
+    init.qcom.usb.rc \
+    usb_compositions.conf \
+    init.qcom.usb.sh \
+    init.qti.dcvs.sh \
+    ueventd.qcom.rc
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlays/overlay \
