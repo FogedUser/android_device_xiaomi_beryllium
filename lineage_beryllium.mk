@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Inherit Device configurations
+$(call inherit-product, device/xiaomi/beryllium/device.mk)
+
 # Inherit Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
