@@ -247,3 +247,7 @@ zygote.critical_window.minute=10
 
 # WiFi
 wifi.aware.interface=wifi-aware0
+
+#Scroll Optimizer
+persist.sys.perf.scroll_opt = true
+persist.sys.perf.scroll_opt.heavy_app = 1

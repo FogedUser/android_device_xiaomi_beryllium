@@ -11,3 +11,6 @@ ro.lmk.swap_free_low_percentage=15
 
 # eBPF
 ro.bpf.kver_override=5.4.299
+
+# Axion DeBug
+persist.sys.ax_debug_enabled=1
