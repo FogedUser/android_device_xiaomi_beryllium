@@ -12,7 +12,7 @@ git clone https://github.com/PocoF1-Resources/android_kernel_xiaomi_sdm845_419.g
 
 # Hardware
 rm -rf hardware/xiaomi
-https://github.com/AxionAOSP-devices/android_hardware_xiaomi.git -b lineage-23.2 hardware/xiaomi
+git clone https://github.com/AxionAOSP-devices/android_hardware_xiaomi.git -b lineage-23.2 hardware/xiaomi
 
 # Patches for Kernel 4.19
 # Hals
