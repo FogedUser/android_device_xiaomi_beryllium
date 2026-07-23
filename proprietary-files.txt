@@ -98,7 +98,6 @@ vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 
-
 # Bluetooth (A2DP) - from Sony SM8250-common
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti;DISABLE_DEPS
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
@@ -351,7 +350,6 @@ vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.sdm845.
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 
-
 # Display configs
 vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
@@ -421,7 +419,6 @@ vendor/bin/dpmQmiMgr|df41c54776abef6edb12b1cd6d250abf5ea6c0a5
 vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=_vendor|ad06856903b163a28135d6c8fd354258e3f0292c
 vendor/lib64/libdpmqmihal.so|67a75d6bd39f4bc825e14d21fa5b61e26ac82b22
-
 
 # DRM
 vendor/bin/qseecomd
