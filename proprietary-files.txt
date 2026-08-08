@@ -75,6 +75,7 @@ vendor/etc/tas2559_r.ftcfg
 system/etc/permissions/audiosphere.xml
 system/framework/audiosphere.jar
 vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libdirac.so
 vendor/lib/soundfx/libshoebox.so
 
 # FM - from S62Pro
@@ -103,27 +104,13 @@ vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti;DISABLE_DEPS
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so;DISABLE_DEPS
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so;DISABLE_DEPS
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so;DISABLE_DEPS
 vendor/lib/btaudio_offload_if.so
 vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/libbluetooth_audio_session_qti_2_1.so
-vendor/lib/libbt-hidlclient.so;DISABLE_DEPS
-vendor/lib/libbtnv.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib/libsoc_helper.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so;DISABLE_DEPS
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so;DISABLE_DEPS
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so;DISABLE_DEPS
-vendor/lib64/btaudio_offload_if.so
-vendor/lib64/libbluetooth_audio_session_qti.so
-vendor/lib64/libbluetooth_audio_session_qti_2_1.so
-vendor/lib64/libbt-hidlclient.so;DISABLE_DEPS
 vendor/lib64/libbtnv.so
 vendor/lib64/libsoc_helper.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
@@ -157,7 +144,6 @@ vendor/etc/thermal-engine.conf
 
 # Thermal engine
 vendor/bin/thermal-engine
-vendor/etc/init/init_thermal-engine.rc
 vendor/lib64/libthermalclient.so
 vendor/lib/libthermalclient.so
 
@@ -260,17 +246,13 @@ vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
+vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
 vendor/lib64/libhexagon_nn_stub.so
-vendor/lib64/libhta.so
 vendor/lib64/libhta_hexagon_runtime.so
 vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
-
-# QDCM calibration data
-vendor/etc/qdcm_calib_data_ebbg_fhd_video_dsi_panel.xml
-vendor/etc/qdcm_calib_data_tianma_fhd_video_dsi_panel.xml
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
@@ -446,6 +428,7 @@ vendor/etc/wfdconfig.xml|4f863ac9a71bafff8afc14e8fab26af979bbb1d6
 # WiFi Display (vendor) - from sweet_k6a OS1.0.19.0.THGMIXM
 vendor/bin/wfdvndservice|194bb3aef5237f05d0c8fab2c88846147a6cc55a
 vendor/bin/wifidisplayhalservice|f887a8806cf686502a4a0d1929149b470db650f7
+vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc|576ce4393b7746b77a230745aa9e9ee3bd31b17d
 vendor/etc/init/wfdvndservice.rc|42e28fb8e0bf00620d7b9939b5bd3164ca671033
 vendor/etc/seccomp_policy/wfdhdcphalservice.policy|23b46af886f3233c2bddff87507ae8d37c31c022
@@ -575,6 +558,7 @@ vendor/etc/init/qcrild.rc|63f82cc56f184e598643ce827fdcc1b09773858c
 vendor/etc/init/vendor.qti.rmt_storage.rc|bc212c6353c2ded44ae4d759605fbbe55aa4fa3f
 vendor/etc/init/vendor.qti.tftp.rc|b27f188cbffba470a4510d50e46ff7c8446c22cb
 vendor/etc/seccomp_policy/atfwd@2.0.policy|74fdb7d47bdb6d0cb06b13701a96a76c9171ab5d
+vendor/lib/libmdmdetect.so
 vendor/lib64/deviceInfoServiceModule.so|c7d4021528f3a43320d0f109a9ed5f765a6a92a2
 vendor/lib64/libconfigdb.so|9db249a0cb6f93c2a32f3c271397ead0c74a5b5b
 vendor/lib64/libhydra_common.so|830d152f34be4d9e9c32dc8991813d4223b6bd1b
@@ -633,6 +617,8 @@ vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql|0734c6a2863ed
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql|fcb2cba3bfd718ecdc8d3cfac3a0b2b2c7e8c506
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql|0fdf4b6ccb48906b37885e060429f79c9fd6bdbf
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql|9a76d5747da2876b87b214579c9d74ae92d218d7
+vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 vendor/radio/qcril_database/qcril.db|f51df17ac3bf25a225e3ba15c830b1d0d2bf4e85
 
 # QMI - from munch - RKQ1.211001.001
@@ -720,6 +706,7 @@ system_ext/lib64/lib-imsvtextutils.so|1dfb5640cd23a92e7ca55a84118b2966653aebc7
 system_ext/lib64/lib-imsvtutils.so|501c2081942844498c466b49a09b79615e5ba877
 system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|f6b7647cfe080baeed006c932b495ff94b5685a7
 system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|b47ffbfc2f22576dac78c5669cd0fa921025bb3a
+system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|ace5e02b6cd79b43a07d84e2d18d6818821a3c48
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|e64aa8a21a8db69d2e2ea14929bb20ced99c119d
 -system_ext/priv-app/ims/ims.apk|6ddec8df47b66c1903de79c7cfb790d2381bb987
