@@ -185,4 +185,3 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # Inherit from the proprietary version
 include vendor/xiaomi/beryllium/BoardConfigVendor.mk
-include vendor/xiaomi/sdm845-common/BoardConfigVendor.mk

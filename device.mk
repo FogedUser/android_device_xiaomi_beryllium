@@ -481,4 +481,3 @@ PRODUCT_PACKAGES += \
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/beryllium/beryllium-vendor.mk)
-$(call inherit-product, vendor/xiaomi/sdm845-common/sdm845-common-vendor.mk)
